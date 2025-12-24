@@ -4,8 +4,34 @@
     {
         static void Main(string[] args)
         {
+            int[] nums = { 1, 2, 3 };
+            Console.WriteLine(nums[1]);
 
-            //Arrays
+            string[] pets = { "cat", "dog", "bird" };
+            Console.WriteLine(pets.Length);
+
+            for (int i = 0; i < pets.Length; i++)
+            {
+                Console.WriteLine(pets[i]);
+            }
+
+            Console.WriteLine();
+            int[] numbers = { 1, 2, 3, 4 };
+            for (int i = 0; i < numbers.Length; i++)
+            {
+                numbers[i] = numbers[i] * 2;
+                Console.WriteLine(numbers[i]);
+            }
+
+            int[] numms = { 5, 10, 15, 20 };
+            bool isCOntain = numms.Contains(15);
+            if (isCOntain) Console.WriteLine("Found");
+            else Console.WriteLine("Not Found");
+
+            int[,] ints = {{ 1, 2 },{ 3,4} };
+            Console.WriteLine(ints[1,0]);
+
+            /*//Arrays
             //Create and initialize
             int[] nums = { 1, 2, 3, 4, 5 };
 
@@ -34,7 +60,9 @@
             //Matrix
             int[,] matrix = { { 1, 2 }, { 3, 4 } };
             Console.WriteLine(matrix[1,1]);
-            Console.WriteLine();
+            Console.WriteLine();*/
+
+
         }
     }
 }
