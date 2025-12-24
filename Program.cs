@@ -31,9 +31,10 @@
                 Console.WriteLine(name);
             }
 
-
+            //Matrix
             int[,] matrix = { { 1, 2 }, { 3, 4 } };
             Console.WriteLine(matrix[1,1]);
+            Console.WriteLine();
         }
     }
 }
